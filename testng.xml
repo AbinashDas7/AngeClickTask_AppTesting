@@ -1,0 +1,13 @@
+<suite name="API Tests">
+    <test name="Check all Login Scenarios">
+        <classes>
+            <class name="testrunner.loginTestRunner"/> 
+        </classes>
+    </test>
+    <test name="Check all Ordering Test">
+        <classes>
+            <class name="testrunner.OrderTestRunner"/> 
+        </classes>
+    </test>
+ </suite>
+

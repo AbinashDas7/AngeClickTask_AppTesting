@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [API Tests]">
+  <test thread-count="5" name="Check all Login Scenarios(failed)">
+    <classes>
+      <class name="testrunner.loginTestRunner">
+        <methods>
+          <include name="runScenario" invocation-numbers="0 1 2"/>
+          <include name="setUpClass"/>
+          <include name="setUpSuite"/>
+          <include name="tearDownSuite"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- testrunner.loginTestRunner -->
+    </classes>
+  </test> <!-- Check all Login Scenarios(failed) -->
+  <test thread-count="5" name="Check all Ordering Test(failed)">
+    <classes>
+      <class name="testrunner.OrderTestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownSuite"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1 2 3"/>
+          <include name="tearDownClass"/>
+          <include name="setUpSuite"/>
+        </methods>
+      </class> <!-- testrunner.OrderTestRunner -->
+    </classes>
+  </test> <!-- Check all Ordering Test(failed) -->
+</suite> <!-- Failed suite [API Tests] -->
